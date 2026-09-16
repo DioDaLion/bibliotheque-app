@@ -1,7 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-bibliotheque-app,com.bibliotheque.service,NotificationService,19,0,0,0,4,0,2,0,2,0
-bibliotheque-app,com.bibliotheque.service,LibraryService,178,0,8,0,36,0,24,0,20,0
-bibliotheque-app,com.bibliotheque.model,Loan,35,0,2,0,12,0,8,0,7,0
-bibliotheque-app,com.bibliotheque.model,Book,9,28,0,0,3,11,3,4,3,4
-bibliotheque-app,com.bibliotheque.model,Member,21,0,0,0,8,0,4,0,4,0
-bibliotheque-app,com.bibliotheque,Main,7,0,0,0,3,0,2,0,2,0
