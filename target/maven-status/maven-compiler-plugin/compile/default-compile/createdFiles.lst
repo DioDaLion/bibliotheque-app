@@ -1,0 +1,6 @@
+com\bibliotheque\Main.class
+com\bibliotheque\model\Book.class
+com\bibliotheque\service\LibraryService.class
+com\bibliotheque\service\NotificationService.class
+com\bibliotheque\model\Member.class
+com\bibliotheque\model\Loan.class

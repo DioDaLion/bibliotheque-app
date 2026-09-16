@@ -24,6 +24,12 @@ jobs:
       - name: Build with Maven
         run: mvn -B clean verify
 
+      - name: Analyse SonarQube
+        run: >
+          mvn -B sonar:sonar
+          -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }}
+          -Dsonar.token=${{ secrets.SONAR_TOKEN }}
+
       - name: Publier les resultats de test
         if: always()
         uses: actions/upload-artifact@v4

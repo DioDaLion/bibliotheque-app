@@ -3,10 +3,10 @@ package com.bibliotheque.service;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import com.bibliotheque.model.Book;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import com.bibliotheque.model.Book;
 
 class LibraryServiceTest {
 
@@ -31,4 +31,9 @@ class LibraryServiceTest {
         Book livre = new Book("3", "Germinal", "Zola", "978-2070413027");
         assertEquals("Germinal", livre.getTitle());
     }
+    @Test
+void testQuiEchoue() {
+    Book livre = new Book("1", "Titre", "Auteur", "978-0");
+    assertEquals("AutreTitre", livre.getTitle());
+}
 }

@@ -33,6 +33,22 @@ pipeline {
       }
     }
 
+    stage('SonarQube Analysis') {
+      steps {
+        withSonarQubeEnv('SonarQube') {
+          sh 'mvn -B sonar:sonar'
+        }
+      }
+    }
+
+    stage('Quality Gate') {
+      steps {
+        timeout(time: 5, unit: 'MINUTES') {
+          waitForQualityGate abortPipeline: true
+        }
+      }
+    }
+
     stage('Package') {
       steps {
         sh 'mvn -B package -DskipTests'
